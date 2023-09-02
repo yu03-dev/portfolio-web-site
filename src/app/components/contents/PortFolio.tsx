@@ -26,7 +26,7 @@ export const PortFolio = () => {
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {urls.map((url) => {
-        return <ImageComponent url={url} />;
+        return <ImageComponent url={url} key={url} />;
       })}
     </div>
   );

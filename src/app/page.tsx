@@ -3,6 +3,7 @@ import { Hero } from "./components/Hero";
 import { Section } from "./components/Section";
 import { PortFolio } from "./components/contents/PortFolio";
 import { Skills } from "./components/contents/Skills";
+import { Contact } from "./components/contents/Contact";
 
 export default function Home() {
   return (
@@ -22,6 +23,13 @@ export default function Home() {
         discription="私は以下のプログラミング言語の経験があります"
       >
         <Skills />
+      </Section>
+      <Section
+        id="contact"
+        title="お問い合わせ"
+        discription="オファーお待ちしております。"
+      >
+        <Contact />
       </Section>
     </div>
   );
