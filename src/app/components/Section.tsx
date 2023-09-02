@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 export type sectionProps = {
@@ -12,7 +11,7 @@ export const Section = ({ id, title, discription, children }: sectionProps) => {
   return (
     <div
       id={id}
-      className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      className="container mt-60 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
       <section className="w-full">
         <h2 className="secondary-title">{title}</h2>
