@@ -1,7 +1,7 @@
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Section } from "./components/Section";
-import { PortFolio } from "./components/contents/portfolio";
+import { PortFolio } from "./components/contents/PortFolio";
 import { Skills } from "./components/contents/Skills";
 
 export default function Home() {
