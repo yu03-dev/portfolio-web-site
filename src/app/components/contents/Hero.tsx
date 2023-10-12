@@ -1,8 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "../elements/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 export const Hero = () => {
   return (
@@ -13,19 +10,10 @@ export const Hero = () => {
       <div className="flex flex-wrap md:flex-nowrap">
         <div className="md:my-36 lg:ml-20 mx-auto flex flex-col items-center md:items-start">
           <h1 className="font-bold text-5xl text-center md:text-left lg:text-7xl md:text-6xl mb-10">
-            TailwindCSSで
+            レスポンシブ
             <br />
-            美しいサイトを
-            <br />
-            作ります
+            始めました
           </h1>
-          <Button className="px-6 py-4">
-            <FontAwesomeIcon
-              icon={faRocket}
-              className="w-4 inline-block mr-4"
-            />
-            <span>もっと見る</span>
-          </Button>
         </div>
         <Image
           src="/human.jpg"

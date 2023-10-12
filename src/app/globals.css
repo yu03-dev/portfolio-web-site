@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .secondary-title {
-  @apply text-3xl font-bold;
+  @apply text-3xl font-bold flex items-center gap-2;
 }
 
 .secondary-title::before {
-  @apply content-[""] block w-12 h-2 bg-theme rounded-full mb-1;
+  @apply content-[""] w-2 h-10 bg-theme rounded-full;
 }
 
 .section-paragraph {

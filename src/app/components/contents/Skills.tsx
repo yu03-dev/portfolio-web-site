@@ -1,5 +1,6 @@
 import {
   IconDefinition,
+  faGolang,
   faJsSquare,
   faPython,
 } from "@fortawesome/free-brands-svg-icons";
@@ -45,7 +46,7 @@ const LangIcon = ({ icon, className }: LangIconProps) => {
     <div>
       <FontAwesomeIcon
         icon={icon}
-        className={className + " w-20 md:w-28 lg:w-32"}
+        className={className + " w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32"}
       />
     </div>
   );
@@ -78,6 +79,15 @@ export const Skills = () => {
         >
           <Badge title="Webサイト制作" />
           <Badge title="フロントエンド開発" />
+        </BoxContent>
+      </BorderBox>
+      <BorderBox className="hover:border-cyan-400">
+        <LangIcon icon={faGolang} className="text-cyan-400" />
+        <BoxContent
+          title="Golang"
+          discription="Goでバックエンドの勉強を始めました。"
+        >
+          <Badge title="バックエンド開発" />
         </BoxContent>
       </BorderBox>
       <BorderBox className=" hover:border-blue-600">
