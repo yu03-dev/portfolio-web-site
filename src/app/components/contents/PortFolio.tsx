@@ -1,32 +1,38 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const urls = [
-  "/portfolio1.jpg",
-  "/portfolio2.jpg",
-  "/portfolio3.jpg",
-  "/portfolio4.jpg",
-  "/portfolio5.jpg",
-  "/portfolio6.jpg",
+type ImageURL = {
+  href: string;
+  src: string;
+};
+
+const imageURLs = [
+  { href: "https://cash-tracker-eta.vercel.app/", src: "/cash-tracker.png" },
+  { href: "https://atcoder.jp/users/condy", src: "/atcoder.png" },
+  { href: "https://github.com/yu03-dev", src: "/github.png" },
 ];
 
-const ImageComponent = ({ url }: { url: string }) => {
+const ImageComponent = ({ imageURL }: { imageURL: ImageURL }) => {
+  const { href, src } = imageURL;
   return (
-    <Image
-      src={url}
-      alt="image"
-      width={500}
-      height={500}
-      className="w-full h-36 object-cover lg:h-72 rounded-md cursor-pointer"
-    />
+    <Link href={href}>
+      <Image
+        src={src}
+        alt="image"
+        width={500}
+        height={500}
+        className="w-full object-cover h-72 rounded-md cursor-pointer hover:scale-110 duration-300"
+      />
+    </Link>
   );
 };
 
 export const PortFolio = () => {
   return (
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {urls.map((url) => {
-        return <ImageComponent url={url} key={url} />;
+    <div className="grid gap-6 lg:grid-cols-3">
+      {imageURLs.map((item, index) => {
+        return <ImageComponent imageURL={item} key={index} />;
       })}
     </div>
   );
