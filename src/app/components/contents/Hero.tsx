@@ -10,9 +10,11 @@ export const Hero = () => {
       <div className="flex flex-wrap md:flex-nowrap">
         <div className="md:my-36 lg:ml-20 mx-auto flex flex-col items-center md:items-start">
           <h1 className="font-bold text-5xl text-center md:text-left lg:text-7xl md:text-6xl mb-10">
-            レスポンシブ
+            レスポン
             <br />
-            始めました
+            シブ
+            <br />
+            完全に理解した
           </h1>
         </div>
         <Image
