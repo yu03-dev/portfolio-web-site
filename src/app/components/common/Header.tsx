@@ -2,7 +2,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
-import { Button } from "./elements/Button";
+import { Button } from "../elements/Button";
 
 type navItemsType = {
   title: string;

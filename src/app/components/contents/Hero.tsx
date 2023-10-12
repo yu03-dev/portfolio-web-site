@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "./elements/Button";
+import { Button } from "../elements/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,6 +1,6 @@
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Section } from "./components/Section";
+import { Header } from "./components/common/Header";
+import { Hero } from "./components/contents/Hero";
+import { Section } from "./components/common/Section";
 import { PortFolio } from "./components/contents/PortFolio";
 import { Skills } from "./components/contents/Skills";
 import { Contact } from "./components/contents/Contact";
